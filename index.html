@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Гостиницы Анапы</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--main">
+    <div class="wrapper header__wrap">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" width="205" height="64">
+      </div>
+      <nav class="menu">
+        <button type="button" class="menu__btn">Меню</button>
+        
+      </nav>
+      <a href="#" class="btn header__book">Раннее бронирование</a>
+      <div class="header__contacts">
+        <a href="tel:+79883141177" class="header__phone">+7 (988) 314-11-77</a>
+        <address>г. Анапа, Пионерский пр-кт, проезд Тополиный, 2А</address>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo">
+      <div class="wrapper promo__wrap">
+        <figure class="promo__logo">
+          <img src="img/logo.png" alt="Logo" width="384" height="120">
+        </figure>
+        <p class="promo__title">Гостиницы Анапы в большинстве случаев – это простой классический уют и дизайн.</p>
+        <p>Отель "Белый песок" предлагает что-то неординарное и совершенно новое. Конструкция гостиницы имеет стильный европейский дизайн, оформленный по средиземноморскому проекту. Отели Анапы не могут сегодня предложить бассейн на крыше под открытым небом. А мы можем. Только у нас вы можете расположиться на удобном шезлонге и ощутить себя в раю в близости к голубому небу.</p>
+        <form action="#" method="get" class="booking">
+          <div class="booking__wrap">
+            <div class="booking__field">
+              <input type="text" class="booking__date" placeholder="Дата заезда:">
+            </div>
+            <div class="booking__field">
+              <input type="text" class="booking__date" placeholder="Дата выезда:">
+            </div>
+            <select name="guest" class="booking__select" required>
+              <option value="" disabled selected>Кол-во гостей</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button type="submit" class="booking__btn">Найти номер</button>
+          </div>
+        </form>
+        <a href="#" class="promo__link" title="Далее"></a>
+      </div>
+    </section>
+    
+    <section class="tabs">
+      <input type="radio" name="radio" id="radio-1" class="tabs__input" checked>
+      <input type="radio" name="radio" id="radio-2" class="tabs__input">
+      <input type="radio" name="radio" id="radio-3" class="tabs__input">
+      <input type="radio" name="radio" id="radio-4" class="tabs__input">
+      <div class="tabs__btns">
+        <div class="wrapper">
+          <label for="radio-1" class="tabs__label tabs__label-1">Номера</label>
+          <label for="radio-2" class="tabs__label tabs__label-2">Ресторан</label>
+          <label for="radio-3" class="tabs__label tabs__label-3">Развлечение</label>
+          <label for="radio-4" class="tabs__label tabs__label-4">Инфаструктура</label>
+        </div>
+      </div>
+      <div class="tabs__field" id="tab-1">
+        <div class="wrapper">
+          <div class="swiper-container tabs__slider-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/img-1.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                <div class="tabs__info">
+                  <p class="tabs__title">Люкс 2-х местный</p>
+                  <p class="tabs__price">от 6 600 руб. в сутки</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img-2.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                <div class="tabs__info">
+                  <p class="tabs__title">Люкс 2-х местный</p>
+                  <p class="tabs__price">от 6 600 руб. в сутки</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img-3.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                <div class="tabs__info">
+                  <p class="tabs__title">Люкс 2-х местный</p>
+                  <p class="tabs__price">от 6 600 руб. в сутки</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img-4.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                <div class="tabs__info">
+                  <p class="tabs__title">Люкс 2-х местный</p>
+                  <p class="tabs__price">от 6 600 руб. в сутки</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/img-5.jpg" alt="Люкс 2-х местный" width="280" height="413">
+                <div class="tabs__info">
+                  <p class="tabs__title">Люкс 2-х местный</p>
+                  <p class="tabs__price">от 6 600 руб. в сутки</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev tabs__prev-1">Назад</div>
+        <div class="swiper-button-next tabs__next-1">Вперед</div>
+      </div>
+       
+      
+    </section>
+    
+    <section class="about">
+      <div class="wrapper">
+        <p class="about__title"></p>
+        <div class="about__wrap">
+          <div class="about__info">
+            <p>Гостиницы Анапы в большинстве случаев – это простой классический уют и дизайн. Отель "Белый песок" предлагает что-то неординарное и совершенно новое. Конструкция гостиницы имеет стильный европейский дизайн, оформленный по средиземноморскому проекту. Отели Анапы не могут сегодня предложить бассейн на крыше под открытым небом. А мы можем. Только у нас вы можете расположиться на удобном шезлонге и ощутить себя в раю в близости к голубому небу.</p>
+            <p>В ресторане можно насладиться вкуснейшими изысками от нашего шеф-повара, а мастерство бармена вас приятно удивит необычностью его работы.</p>
+            <p>Если вы выбираете отели Анапы, официальный сайт Вам поможет. О нас вы можете прочесть всю информацию именно там. Мы находимся в городе Анапа на первой пляжной линии. То есть, от нас до моря рукой подать. Комфорт в отелях делает отдых в Анапе, цены на который доступны каждому, лучшим, удобным, легким и приятным, интересным.</p>
+            <p>Мы близко не только к морю, хотя и этим могут похвастаться не все санатории Анапы или частные дома. Из окон нашего отеля открывается великолепный вид на морское побережье. Имеется прямой выход к морю, что облегчает отдых и купание на собственном пляже гостиницы.</p>
+            <p>В 15 минутах ходьбы от нас – оживленный проспект города, где сосредоточены самые разнообразнее развлечения, работающие круглосуточно – это Пионерский проспект.</p>
+          </div>
+          <div class="about__sale">
+            <div class="about__banner">
+              <p>При бронировании номера с сайта получите<span>скидку -20%</span></p>
+              <a href="#" class="btn about__btn">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="features">
+      <div class="wrapper">
+        <ul class="features__list">
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-5.png" alt="Отель 4*" width="72" height="17">
+            </figure>
+            <p>Отель 4*</p>
+          </li>
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-6.png" alt="Cистема питания ALL" width="52" height="52">
+            </figure>
+            <p>Cистема питания ALL</p>
+          </li>
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-7.png" alt="Обновленные номера" width="48" height="48">
+            </figure>
+            <p>Обновленные номера</p>
+          </li>
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-8.png" alt="Анимация для детей" width="46" height="47">
+            </figure>
+            <p>Анимация для детей</p>
+          </li>
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-9.png" alt="Развлечения для взрослых" width="40" height="50">
+            </figure>
+            <p>Развлечения для взрослых</p>
+          </li>
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-10.png" alt="Акции и спепредложения" width="41" height="50">
+            </figure>
+            <p>Акции и спепредложения</p>
+          </li>
+          <li class="features__item">
+            <figure class="features__img">
+              <img src="img/icon-11.png" alt="Для гостей VIP" width="51" height="55">
+            </figure>
+            <p>Для гостей VIP</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slider">
+      <div class="swiper-container slider__photo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slide-1.jpg" alt="Slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide-2.jpg" alt="Slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide-3.jpg" alt="Slide">
+          </div>
+        </div>
+        <div class="swiper-button-prev slider__prev">Назад</div>
+        <div class="swiper-button-next slider__next">Вперед</div>
+      </div>
+    </section>
+    
+    <section class="review">
+      <div class="wrapper">
+        <p class="review__title">Отзывы наших гостей</p>
+        <div class="swiper-container review__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev review__prev">Назад</div>
+      <div class="swiper-button-next review__next">Вперед</div>
+    </section>
+    
+    <section class="partners wrapper">
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img src="img/logo-1.jpg" alt="Logo" width="154" height="77">
+        </li>
+        <li class="partners__item">
+          <img src="img/logo-2.jpg" alt="Logo" width="200" height="100">
+        </li>
+        <li class="partners__item">
+          <img src="img/logo-3.jpg" alt="Logo" width="200" height="100">
+        </li>
+        <li class="partners__item">
+          <img src="img/logo-4.jpg" alt="Logo" width="200" height="100">
+        </li>
+        <li class="partners__item">
+          <img src="img/logo-5.jpg" alt="Logo" width="200" height="100">
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <nav class="footer__menu wrapper">
+      <button type="button" class="footer__menu-btn"></button>
+      <ul class="footer__menu">
+        <li><a href="#" class="footer__link footer__link--active">Об отеле</a></li>
+        <li><a href="#" class="footer__link">Размещение</a></li>
+        <li><a href="#" class="footer__link">Номера</a></li>
+        <li><a href="#" class="footer__link">Галерея</a></li>
+        <li><a href="#" class="footer__link">Ресторан</a></li>
+        <li><a href="#" class="footer__link">Развлечения</a></li>
+        <li><a href="#" class="footer__link">Анимация</a></li>
+        <li><a href="#" class="footer__link">Услуги</a></li>
+        <li><a href="#" class="footer__link">Акции</a></li>
+        <li><a href="#" class="footer__link">Раннее бронирование</a></li>
+        <li><a href="#" class="footer__link">Партнеры</a></li>
+        <li><a href="#" class="footer__link">Отзывы</a></li>
+      </ul>
+    </nav>
+    <div class="footer__bottom wrapper">
+      <div class="footer__logo">
+        <img src="img/logo.png" alt="Logo" width="212" height="66">
+      </div>
+      <div class="footer__block">
+        <div class="footer__contacts">
+          <a href="tel:+79883141177" class="footer__phone">+7 (988) 314-11-77</a>
+          <address>г. Анапа, Пионерский пр-кт, проезд Тополиный, 2А</address>
+        </div>
+        <a href="#" class="btn footer__btn">Раннее бронирование</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.tabs__slider-1', {
+      navigation: {
+        nextEl: '.tabs__next-1',
+        prevEl: '.tabs__prev-1',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
+    
+    var mySwiper = new Swiper ('.slider__photo', {
+      navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+    });
+    
+    var mySwiper = new Swiper ('.review__slider', {
+      navigation: {
+        nextEl: '.review__next',
+        prevEl: '.review__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+    });
+  </script>
+  
+  <!-- Calender -->
+  <script>
+    $(function() {
+      $(".booking__date").datepicker();
+    });
+  </script>
+</body>
+</html>
