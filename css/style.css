@@ -655,6 +655,7 @@ button {
   background-color: transparent;
 }
 .tabs {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -685,7 +686,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
 }
 .tabs__label {
   width: 25%;
@@ -791,6 +792,32 @@ button {
 #radio-4:checked ~ .tabs__btns .tabs__wrap .tabs__label-4::before {
   background-image: url(../img/icon-4green.png);
 }
+#tab-1,
+#tab-2,
+#tab-3,
+#tab-4 {
+  opacity: 0;
+}
+#tab-1 {
+  position: relative;
+  z-index: 2;
+}
+#tab-2,
+#tab-3,
+#tab-4 {
+  position: absolute;
+  top: 155px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+#radio-1:checked ~ #tab-1,
+#radio-2:checked ~ #tab-2,
+#radio-3:checked ~ #tab-3,
+#radio-4:checked ~ #tab-4 {
+  opacity: 1;
+  z-index: 3;
+}
 .tabs__field {
   position: relative;
 }
@@ -843,4 +870,67 @@ button {
 }
 .swiper-button-next {
   text-align: right;
+}
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #000;
+  background-image: url(../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about__info {
+  width: 880px;
+}
+.about__info p {
+  margin-top: 0;
+}
+.about__sale {
+  width: 280px;
+  padding: 25px;
+  background-image: url(../img/img-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about__banner {
+  padding: 20px 15px;
+  text-align: center;
+  color: #4c4c4c;
+  background-color: #fff;
+}
+.about__banner p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.about__banner span {
+  display: block;
+  font-size: 50px;
+  color: #05aeae;
+  font-weight: 700;
+  text-transform: uppercase;
 }
