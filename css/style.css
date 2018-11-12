@@ -1120,6 +1120,7 @@ button {
 }
 .review__slider .swiper-slide {
   position: relative;
+  z-index: 2;
   width: 570px;
   padding: 20px 15px;
   padding-bottom: 10px;
@@ -1129,7 +1130,6 @@ button {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
 }
-.review__slider .swiper-slide::after,
 .review__slider .swiper-slide::before {
   content: "";
   position: absolute;
@@ -1143,8 +1143,6 @@ button {
 }
 .review__slider .swiper-slide::before {
   z-index: -1;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
 }
 .review__slider .swiper-slide p {
   margin-top: 10px;
@@ -1501,13 +1499,15 @@ button {
   .about__title {
     font-size: 36px;
   }
-  .review__slider,
+  .review__slider {
+    width: 280px;
+  }
   .features__item {
     width: 100%;
   }
   .slider__photo .swiper-slide {
     width: 100%;
-    height: auto;
+    height: 295px;
   }
   .review__slider .swiper-slide {
     width: 260px;
