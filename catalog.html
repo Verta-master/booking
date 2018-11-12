@@ -10,8 +10,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header--internal">
     <div class="wrapper header__wrap">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo" width="205" height="64">
+      </a>
       <nav class="menu">
         <button type="button" class="menu__btn">Меню</button>
         
@@ -25,13 +28,9 @@
   </header>
   
   <main>
-    <section class="promo">
+    <section class="promo promo--internal">
       <div class="wrapper promo__wrap">
-        <figure class="promo__logo">
-          <img src="img/logo.png" alt="Logo" width="384" height="120">
-        </figure>
-        <p class="promo__title">Гостиницы Анапы в большинстве случаев – это простой классический уют и дизайн.</p>
-        <p>Отель "Белый песок" предлагает что-то неординарное и совершенно новое. Конструкция гостиницы имеет стильный европейский дизайн, оформленный по средиземноморскому проекту. Отели Анапы не могут сегодня предложить бассейн на крыше под открытым небом. А мы можем. Только у нас вы можете расположиться на удобном шезлонге и ощутить себя в раю в близости к голубому небу.</p>
+        <h1>Номера и цены</h1>
         <form action="#" method="get" class="booking">
           <div class="booking__wrap">
             <div class="booking__field">
@@ -49,21 +48,21 @@
             <button type="submit" class="booking__btn">Найти номер</button>
           </div>
         </form>
-        <a href="#tabs" class="promo__link" title="Далее"></a>
       </div>
     </section>
     
-    <section class="tabs" id="tabs">
+    <section class="tabs tabs--internal" id="tabs">
+      <p class="tabs__heading">Наш прайс на 05 ноября 2018</p>
       <input type="radio" name="radio" id="radio-1" class="tabs__input" checked>
       <input type="radio" name="radio" id="radio-2" class="tabs__input">
       <input type="radio" name="radio" id="radio-3" class="tabs__input">
       <input type="radio" name="radio" id="radio-4" class="tabs__input">
       <div class="tabs__btns">
         <div class="wrapper tabs__wrap">
-          <label for="radio-1" class="tabs__label tabs__label-1"><span>Номера</span></label>
-          <label for="radio-2" class="tabs__label tabs__label-2"><span>Ресторан</span></label>
-          <label for="radio-3" class="tabs__label tabs__label-3"><span>Развлечение</span></label>
-          <label for="radio-4" class="tabs__label tabs__label-4"><span>Инфаструктура</span></label>
+          <label for="radio-1" class="tabs__label tabs__label-1"><span>Номера с видом на море</span></label>
+          <label for="radio-2" class="tabs__label tabs__label-2"><span>Обычные номера</span></label>
+          <label for="radio-3" class="tabs__label tabs__label-3"><span>Номера у бассейна</span></label>
+          <label for="radio-4" class="tabs__label tabs__label-4"><span>Все номера</span></label>
         </div>
       </div>
       <div class="tabs__field" id="tab-1">
@@ -72,42 +71,47 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-1.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit">Хит продаж</span>
+                  <img src="img/img-1.jpg" alt="Стандарт - море Double" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
+                    <p class="tabs__title">Стандарт -  море Double</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-2.jpg" alt="Стандарт - море Twin" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Стандарт - море Twin</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-3.jpg" alt="Полулюкс - море" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Полулюкс - море</p>
                     <p class="tabs__price">от 6 600 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-2.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-4.jpg" alt="Люкс - море" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
+                    <p class="tabs__title">Люкс - море</p>
+                    <p class="tabs__price">от 11 400 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-3.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
-                  <img src="img/img-4.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
                   <img src="img/img-5.jpg" alt="Люкс 2-х местный" width="280" height="413">
                   <div class="tabs__info">
                     <p class="tabs__title">Люкс 2-х местный</p>
@@ -127,42 +131,47 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-2.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit">Хит продаж</span>
+                  <img src="img/img-2.jpg" alt="Стандарт - море Double" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
+                    <p class="tabs__title">Стандарт -  море Double</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-1.jpg" alt="Стандарт - море Twin" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Стандарт - море Twin</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-3.jpg" alt="Полулюкс - море" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Полулюкс - море</p>
                     <p class="tabs__price">от 6 600 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-1.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-4.jpg" alt="Люкс - море" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
+                    <p class="tabs__title">Люкс - море</p>
+                    <p class="tabs__price">от 11 400 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-3.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
-                  <img src="img/img-4.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
                   <img src="img/img-5.jpg" alt="Люкс 2-х местный" width="280" height="413">
                   <div class="tabs__info">
                     <p class="tabs__title">Люкс 2-х местный</p>
@@ -182,42 +191,47 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-1.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit">Хит продаж</span>
+                  <img src="img/img-1.jpg" alt="Стандарт - море Double" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
+                    <p class="tabs__title">Стандарт -  море Double</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-2.jpg" alt="Стандарт - море Twin" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Стандарт - море Twin</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-3.jpg" alt="Полулюкс - море" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Полулюкс - море</p>
                     <p class="tabs__price">от 6 600 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-3.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-4.jpg" alt="Люкс - море" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
+                    <p class="tabs__title">Люкс - море</p>
+                    <p class="tabs__price">от 11 400 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-2.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
-                  <img src="img/img-4.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
                   <img src="img/img-5.jpg" alt="Люкс 2-х местный" width="280" height="413">
                   <div class="tabs__info">
                     <p class="tabs__title">Люкс 2-х местный</p>
@@ -237,42 +251,47 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-4.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit">Хит продаж</span>
+                  <img src="img/img-2.jpg" alt="Стандарт - море Double" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
+                    <p class="tabs__title">Стандарт -  море Double</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-1.jpg" alt="Стандарт - море Twin" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Стандарт - море Twin</p>
+                    <p class="tabs__price">от 5 200 руб. в сутки</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-3.jpg" alt="Полулюкс - море" width="280" height="358">
+                  <div class="tabs__info">
+                    <p class="tabs__title">Полулюкс - море</p>
                     <p class="tabs__price">от 6 600 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-2.jpg" alt="Люкс 2-х местный" width="280" height="358">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
+                  <img src="img/img-4.jpg" alt="Люкс - море" width="280" height="358">
                   <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
+                    <p class="tabs__title">Люкс - море</p>
+                    <p class="tabs__price">от 11 400 руб. в сутки</p>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
                 <a href="#" class="tabs__link">
-                  <img src="img/img-3.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
-                  <img src="img/img-1.jpg" alt="Люкс 2-х местный" width="280" height="358">
-                  <div class="tabs__info">
-                    <p class="tabs__title">Люкс 2-х местный</p>
-                    <p class="tabs__price">от 6 600 руб. в сутки</p>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="tabs__link">
+                  <span class="tabs__hit tabs__hidden">Хит продаж</span>
                   <img src="img/img-5.jpg" alt="Люкс 2-х местный" width="280" height="413">
                   <div class="tabs__info">
                     <p class="tabs__title">Люкс 2-х местный</p>
@@ -358,24 +377,6 @@
       </div>
     </section>
     
-    <section class="slider">
-      <div class="swiper-container slider__photo">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/slide-1.jpg" alt="Slide">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slide-2.jpg" alt="Slide">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slide-3.jpg" alt="Slide">
-          </div>
-        </div>
-        <div class="swiper-button-prev slider__prev">Назад</div>
-        <div class="swiper-button-next slider__next">Вперед</div>
-      </div>
-    </section>
-    
     <section class="review">
       <div class="wrapper">
         <p class="title-2">Отзывы наших гостей</p>
@@ -407,27 +408,6 @@
       </div>
       <div class="swiper-button-prev review__prev">Назад</div>
       <div class="swiper-button-next review__next">Вперед</div>
-    </section>
-    
-    <section class="partners wrapper">
-      <p class="title-2">Партнеры</p>
-      <ul class="partners__list">
-        <li class="partners__item">
-          <img src="img/logo-1.jpg" alt="Logo" width="154" height="77">
-        </li>
-        <li class="partners__item">
-          <img src="img/logo-2.jpg" alt="Logo" width="200" height="100">
-        </li>
-        <li class="partners__item">
-          <img src="img/logo-3.jpg" alt="Logo" width="200" height="100">
-        </li>
-        <li class="partners__item">
-          <img src="img/logo-4.jpg" alt="Logo" width="200" height="100">
-        </li>
-        <li class="partners__item">
-          <img src="img/logo-5.jpg" alt="Logo" width="200" height="100">
-        </li>
-      </ul>
     </section>
   </main>
   
@@ -516,19 +496,6 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 20,
-    });
-    
-    var mySwiper = new Swiper ('.slider__photo', {
-      navigation: {
-        nextEl: '.slider__next',
-        prevEl: '.slider__prev',
-      },
-      simulateTouch: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      loop: true,
     });
     
     var mySwiper = new Swiper ('.review__slider', {
