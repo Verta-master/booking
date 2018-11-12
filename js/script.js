@@ -7,12 +7,15 @@ jQuery(function($) {
     $('.menu__list').slideToggle();
   });
   
-//scroll to arrow anchors
-  $(".promo__link").on("click","a", function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top}, 500);
+  $('.footer__menu-btn').click(function() {
+    $('.footer__list').slideToggle();
   });
-
+  
+//scroll to arrow anchors
+  $('.promo__link').click(function() {
+    event.preventDefault();
+    var id  = $(this).attr('href');
+    var top = $(id).offset().top;
+    $('body, html').animate({scrollTop: top}, 500);
+  });
 });
