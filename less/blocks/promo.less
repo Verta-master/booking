@@ -1,7 +1,7 @@
 .promo {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 220px;
+  padding-bottom: 202px;
   color: #fff;
   font-size: 20px;
   line-height: 1.15;
@@ -31,7 +31,32 @@
   transform: translateX(-50%);
   width: 25px;
   height: 37px;
-  background-image: url(../img/icon-mouse.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 15px;
+  border: 1px solid @blue;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 2px;
+    height: 9px;
+    background-color: @blue;
+    animation: mouse 1s infinite;
+  }
+}
+
+@keyframes mouse {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  50% {
+    top: 9px;
+    opacity: 1;
+  }
+  100% {
+    top: 23px;
+    opacity: 0;
+  }
 }

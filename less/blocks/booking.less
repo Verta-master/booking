@@ -1,5 +1,7 @@
 .booking {
-  margin-top: 110px;
+  position: relative;
+  z-index: 5;
+  margin-top: 115px;
 }
 
 .booking__wrap {
@@ -44,8 +46,8 @@
   
   &:hover,
   &:active {
-    color: @blue;
-    border-color: @blue;
+    color: @blue-light;
+    border-color: @blue-light;
     .transition();
   }
 }
@@ -67,7 +69,7 @@
   cursor: pointer;
   
   option {
-    background-color: rgba(0,0,0,0.5);
+    background-color: @blue;
   }
 
   option[disabled] {

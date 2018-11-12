@@ -43,6 +43,10 @@
   cursor: pointer;
   .transition();
   
+  span {
+    border-bottom: 1px dotted #4c4c4c;
+  }
+  
   &::before {
     content: "";
     position: absolute;
@@ -105,6 +109,10 @@
 #radio-4:checked ~ .tabs__btns .tabs__wrap .tabs__label-4 {
   color: @blue;
   .transition();
+  
+  span {
+    border-bottom: 1px dotted #fff;
+  }
   
   &::before {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
@@ -184,7 +192,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 18px 10px;
   color: #fff;
   line-height: 1.2;
   text-align: center;
@@ -219,6 +227,11 @@
   outline: none;
 }
 
+.swiper-button-prev {
+  left: 115px;
+}
+
 .swiper-button-next {
   text-align: right;
+  right: 115px;
 }
