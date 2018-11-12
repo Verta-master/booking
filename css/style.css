@@ -704,6 +704,9 @@ button {
   border: none;
   background-color: transparent;
 }
+.ui-widget.ui-widget-content {
+  background-color: #fff;
+}
 .tabs {
   position: relative;
   padding-top: 50px;
@@ -865,7 +868,7 @@ button {
 #tab-3,
 #tab-4 {
   position: absolute;
-  top: 155px;
+  top: 157px;
   left: 0;
   right: 0;
   z-index: 0;
@@ -1117,7 +1120,6 @@ button {
 }
 .review__slider .swiper-slide {
   position: relative;
-  z-index: 2;
   width: 570px;
   padding: 20px 15px;
   padding-bottom: 10px;
@@ -1143,9 +1145,6 @@ button {
   z-index: -1;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
-}
-.review__slider .swiper-slide::after {
-  z-index: 2;
 }
 .review__slider .swiper-slide p {
   margin-top: 10px;
@@ -1272,6 +1271,7 @@ button {
   margin-bottom: 10px;
 }
 .footer__contacts address {
+  max-width: 100%;
   font-size: 18px;
   line-height: 1.2;
 }
@@ -1383,8 +1383,12 @@ button {
   .header__book {
     position: static;
     margin-left: auto;
+    margin-right: auto;
     -webkit-transform: none;
             transform: none;
+  }
+  .btn {
+    font-size: 18px;
   }
   .header__wrap {
     -ms-flex-wrap: wrap;
