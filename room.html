@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Гостиницы Анапы</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--internal">
+    <div class="wrapper header__wrap">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo" width="205" height="64">
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn">Меню</button>
+        <div class="menu__wrap">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-1.png" alt="Об отеле" width="33" height="30">
+                <img src="img/menu-1green.png" alt="Об отеле" width="33" height="30">
+                <span>Об отеле</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-2.png" alt="Ресторан" width="28" height="30">
+                <img src="img/menu-2green.png" alt="Ресторан" width="28" height="30">
+                <span>Ресторан</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-3.png" alt="Номера и цены" width="24" height="34">
+                <img src="img/menu-3green.png" alt="Номера и цены" width="24" height="34">
+                <span>Номера и цены</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-4.png" alt="Фото" width="33" height="27">
+                <img src="img/menu-4green.png" alt="Фото" width="33" height="27">
+                <span>Фото</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-5.png" alt="Статьи" width="32" height="32">
+                <img src="img/menu-5green.png" alt="Статьи" width="32" height="32">
+                <span>Статьи</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-6.png" alt="Акции" width="32" height="32">
+                <img src="img/menu-6green.png" alt="Акции" width="32" height="32">
+                <span>Акции</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-7.png" alt="Отзывы" width="30" height="30">
+                <img src="img/menu-7green.png" alt="Отзывы" width="30" height="30">
+                <span>Отзывы</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-8.png" alt="Услуги" width="27" height="27">
+                <img src="img/menu-8green.png" alt="Услуги" width="27" height="27">
+                <span>Услуги</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-9.png" alt="Реквизиты" width="26" height="26">
+                <img src="img/menu-9green.png" alt="Реквизиты" width="26" height="26">
+                <span>Реквизиты</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img src="img/menu-10.png" alt="Контакты" width="24" height="28">
+                <img src="img/menu-10green.png" alt="Контакты" width="24" height="28">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a href="#" class="btn header__book">Раннее бронирование</a>
+      <div class="header__contacts">
+        <a href="tel:+79883141177" class="header__phone">+7 (988) 314-11-77</a>
+        <address>г. Анапа, Пионерский пр-кт, проезд Тополиный, 2А</address>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo promo--internal">
+      <div class="wrapper promo__wrap">
+        <h1>Люкс 2-х местный</h1>
+        <p>Уютный и компактный однокомнатный номер площадью 38 м<sup>2</sup> — оптимальное решение для отдыха премиум-класса на лучшем Spa-курорте России 2016 года.</p>
+        <form action="#" method="get" class="booking">
+          <div class="booking__wrap">
+            <div class="booking__field">
+              <input type="text" class="booking__date" placeholder="Дата заезда:">
+            </div>
+            <div class="booking__field">
+              <input type="text" class="booking__date" placeholder="Дата выезда:">
+            </div>
+            <select name="guest" class="booking__select" required>
+              <option value="" disabled selected>Кол-во гостей</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button type="submit" class="booking__btn">Найти номер</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <section class="info wrapper">
+      <p>Домашний уют и потрясающий дизайн - главные характеристики номера Делюкс.</p>
+      <p>Оптимальное ценовое предложение номера Делюкс позволит Вам провести отпуск премиум-класса в Белый Песок. Балкон с видом на море, горы и атмосфера абсолютной релаксации.</p>
+      <p class="info__price">от 6 600 руб. в сутки</p>
+      <a href="#" class="btn info__btn">Посмотреть панораму номера</a>
+    </section>
+    
+    <section class="slider">
+      <div class="swiper-container slider__photo">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slide-4.jpg" alt="Slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide-5.jpg" alt="Slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide-6.jpg" alt="Slide">
+          </div>
+        </div>
+        <div class="swiper-button-prev slider__prev">Назад</div>
+        <div class="swiper-button-next slider__next">Вперед</div>
+      </div>
+    </section>
+
+    <section class="info info--main wrapper">
+      <p class="info__title">Варианты размещения</p>
+      <div class="info__block">
+        <div class="info__option">
+          <figure class="info__person">
+            <img src="img/icon-person.png" alt="до 3 взрослых — без детей">
+            <img src="img/icon-person.png" alt="до 3 взрослых — без детей">
+            <img src="img/icon-person.png" alt="до 3 взрослых — без детей">
+          </figure>
+          <span>до 3 взрослых — без детей</span>
+        </div>
+        <div class="info__option">
+          <figure class="info__person">
+            <img src="img/icon-person.png" alt="максимум 2 взрослых">
+            <img src="img/icon-person.png" alt="максимум 2 взрослых">
+            <img class="info__child" src="img/icon-person.png" alt="максимум 2 взрослых">
+          </figure>
+          <span>+ максимум 2 взрослых + максимум<br>1 ребенок</span>
+        </div>
+      </div>
+      
+      <p class="info__title">Комфортабельные номера включают в себя следующее оборудование:</p>
+      <ul class="info__service">
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service1.png" alt="Центральная система кондиционирования" width="56" height="39">
+          </figure>
+          <p>Центральная система кондиционирования</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service2.png" alt="LCD-телевизор" width="54" height="52">
+          </figure>
+          <p>LCD-телевизор</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service3.png" alt="Лампа для чтения" width="37" height="60">
+          </figure>
+          <p>Лампа для чтения</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service4.png" alt="Фен" width="50" height="45">
+          </figure>
+          <p>Фен</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service5.png" alt="Утюг" width="57" height="39">
+          </figure>
+          <p>Утюг</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service6.png" alt="Сейф" width="46" height="46">
+          </figure>
+          <p>Сейф</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service7.png" alt="Зеркало для макияжа" width="38" height="54">
+          </figure>
+          <p>Зеркало для макияжа</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service8.png" alt="Наборы косметики" width="44" height="56">
+          </figure>
+          <p>Наборы косметики</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service9.png" alt="Гладильная доска" width="56" height="51">
+          </figure>
+          <p>Гладильная доска</p>
+        </li>
+        <li class="info__item">
+          <figure class="info__img">
+            <img src="img/icon-service10.png" alt="Электрочайник" width="43" height="48">
+          </figure>
+          <p>Электрочайник</p>
+        </li>
+      </ul>
+      
+      <p class="info__title">В стоимость входит:</p>
+      <div class="info__list">
+        <ul>
+          <li>размещение в номере выбранной категории;</li>
+          <li>ежедневная уборка номера со сменой постельного белья, побудка к определенному времени, доставка в номер корреспонденции;</li>
+          <li>предоставление одного комплекта посуды и столовых приборов, кипятка, чая, кофе, сахара и питьевой воды;</li>
+          <li>скоростное подключение к wi-fi на всей территории комплекса;</li>
+          <li>свежая пресса и настольные игры в холле;</li>
+          <li>вызов такси, вызов скорой помощи, других специальных служб, пользование медицинской аптечкой;</li>
+          <li>предоставление детских принадлежностей: детская кровать, люлька и пр. (детская коляска - за отдельную плату);</li>
+          <li>питание в ресторане шведской линии согласно выбранному варианту (трехразовое питание или только завтрак);</li>
+          <li>сейф для хранения ценных вещей в номере;</li>
+          <li>камера хранения;</li>
+          <li>швейный набор;</li>
+          <li>посещение всех общедоступных зон и территории комплекса (за исключением территорий, доступ к которым ограничен администрацией комплекса). Пользование территорией вилл доступно только гостям, в них проживающим;</li>
+          <li>медицинские оздоровительные услуги согласно выбранной программе и показаниям к санаторно-курортному лечению. (Медицинские услуги оказываются в соответствии с Регламентом оказания медицинской помощи в СКК «МРИЯ»);</li>
+          <li>пользование услугами СПА-центра: сауна, хамам;</li>
+          <li>пользование крытым и открытым бассейнами;</li>
+          <li>пользование пляжем комплекса;</li>
+          <li>услуги клабкаров на территории комплекса (только в летний период);</li>
+          <li>посещение тренажерного зала и групповых тренировок;</li>
+          <li>посещение детской игровой зоны, включая открытые игровые площадки;</li>
+          <li>просмотр фильмов в кинотеатре в часы, указанные в расписании;</li>
+          <li>посещение веревочного городка;</li>
+          <li>посещение мероприятий согласно развлекательной программе комплекса. (За исключением мероприятий, организуемых третьими лицами на территории комплекса). Посещение и пользование указанными зонами допускается только в часы их работы, установленные администрацией комплекса.</li>
+        </ul>
+        <p>Услуги, не указанные выше, оказываются гостю за отдельную плату в соответствии с расценками, установленными администрацией комплекса, либо предоставляются по специальным акциям бесплатно.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <nav class="footer__menu">
+        <button type="button" class="footer__menu-btn">Меню &raquo;</button>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link footer__link--active">Об отеле</a></li>
+          <li><a href="#" class="footer__link">Размещение</a></li>
+          <li><a href="#" class="footer__link">Номера</a></li>
+          <li><a href="#" class="footer__link">Галерея</a></li>
+          <li><a href="#" class="footer__link">Ресторан</a></li>
+          <li><a href="#" class="footer__link">Развлечения</a></li>
+          <li><a href="#" class="footer__link">Анимация</a></li>
+          <li><a href="#" class="footer__link">Услуги</a></li>
+          <li><a href="#" class="footer__link">Акции</a></li>
+          <li><a href="#" class="footer__link">Раннее бронирование</a></li>
+          <li><a href="#" class="footer__link">Партнеры</a></li>
+          <li><a href="#" class="footer__link">Отзывы</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom wrapper">
+      <div class="footer__logo">
+        <img src="img/logo.png" alt="Logo" width="212" height="66">
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+79883141177" class="footer__phone">+7 (988) 314-11-77</a>
+        <address>г. Анапа, Пионерский пр-кт, проезд Тополиный, 2А</address>
+      </div>
+      <a href="#" class="btn footer__btn">Раннее бронирование</a>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.slider__photo', {
+      navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+    });
+  </script>
+  
+  <!-- Calender -->
+  <script>
+    $(function() {
+      $(".booking__date").datepicker();
+    });
+  </script>
+</body>
+</html>
