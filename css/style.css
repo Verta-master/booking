@@ -881,9 +881,9 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-bottom: 13px;
 }
 .tabs__label {
@@ -1742,6 +1742,9 @@ h1 {
   .promo--internal {
     padding-top: 170px;
   }
+  .tabs__label {
+    font-size: 16px;
+  }
 }
 @media (max-width: 766px) {
   .header__book {
@@ -1968,5 +1971,10 @@ h1 {
   }
   .info__item {
     width: 100%;
+  }
+  .tabs--internal #tab-2,
+  .tabs--internal #tab-3,
+  .tabs--internal #tab-4 {
+    top: 523px;
   }
 }
