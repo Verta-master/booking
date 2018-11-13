@@ -1603,6 +1603,9 @@ h1 {
   .menu__link {
     font-size: 16px;
   }
+  .promo--internal {
+    padding-top: 170px;
+  }
 }
 @media (max-width: 766px) {
   .header__book {
