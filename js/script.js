@@ -4,7 +4,7 @@ jQuery(function($) {
 //Mobile menu
   $('.menu__btn').click(function() {
     $('.menu').toggleClass('menu--opened');
-    $('.menu__list').slideToggle();
+    $('.menu__wrap').slideToggle();
   });
   
   $('.footer__menu-btn').click(function() {

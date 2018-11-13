@@ -50,6 +50,10 @@
       height: auto;
     }
   }
+  .menu__list {
+    width: 100vw;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 1022px) {
@@ -128,13 +132,15 @@
       margin-left: auto;
     }
   }
+  .menu__link {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 766px) {
   .header__book {
     position: static;
     margin-left: auto;
-    margin-right: auto;
     transform: none;
   }
   .btn {
@@ -206,11 +212,27 @@
   h1 {
     font-size: 36px;
   }
+  .menu__list {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: rgba(0,0,0,0.75);
+  }
+  .menu__item {
+    width: 20%;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .menu {
     order: 1;
+  }
+  .menu__item {
+    width: 33%;
+  }
+  .menu--opened .menu__btn::before,
+  .menu__btn {
+    font-size: 16px;
   }
   .header__contacts {
     margin-top: 0;

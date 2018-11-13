@@ -1,8 +1,20 @@
-.menu {
-  
+.menu--opened {
+  .menu__btn {
+    font-size: 0;
+    background-image: url(../img/icon-menu-cross.png);
+    background-size: 18px 18px;
+    
+    &::before {
+      display: block;
+      color: @blue;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
 }
 
 .menu__btn {
+  position: relative;
   padding-left: 40px;
   color: #fff;
   font-size: 20px;
@@ -11,4 +23,63 @@
   background-repeat: no-repeat;
   background-size: 26px 21px;
   background-position: left center;
+  
+  &::before {
+    content: "Закрыть";
+    display: none;
+  }
+}
+
+.menu__wrap {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  width: 1180px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 5px;
+}
+
+.menu__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  .transition();
+  
+  img {
+    display: block;
+    margin-bottom: 5px;
+    
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+    
+    img {
+      &:first-child {
+        display: none;
+      }
+      
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+  }
 }
